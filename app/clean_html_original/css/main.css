@@ -17,3 +17,129 @@ body textarea:required:valid {
 
 .hidden {
   display: none; }
+
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loader .loader_inner {
+    background-image: url("../img/load.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
+section,
+.main_head {
+  position: relative; }
+
+.main_head {
+  min-height: 620px;
+  padding-top: 20px; }
+
+.logo_container {
+  float: left; }
+
+svg {
+  width: 80px;
+  height: 80px;
+  z-index: 100;
+  position: relative; }
+
+.toggle_menu {
+  float: right;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  z-index: 100;
+  outline: 0;
+  border: none; }
+
+.sandwich {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+  .sandwich > span {
+    display: block; }
+  .sandwich .sw-topper {
+    position: relative;
+    top: 0;
+    width: 34px;
+    height: 3px;
+    background: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    transition: transform 0.5s, top 0.2s;
+    transition-delay: 0.2s, 0s; }
+  .sandwich .sw-bottom {
+    position: relative;
+    width: 34px;
+    height: 3px;
+    top: 7.5px;
+    background: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    transition: transform 0.5s, top 0.2s;
+    transition-delay: 0.2s, 0s; }
+  .sandwich .sw-footer {
+    position: relative;
+    width: 34px;
+    height: 3px;
+    top: 15px;
+    background: white;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    transition: all 0.5s;
+    transition-delay: 0.1s; }
+
+.sandwich.active .sw-topper {
+  top: 9px;
+  transform: rotate(-45deg); }
+
+.sandwich.active .sw-bottom {
+  top: 6px;
+  transform: rotate(45deg); }
+
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg); }
+
+.top_menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 50;
+  right: 0;
+  top: 0;
+  display: none; }
+  .top_menu ul, .top_menu li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .top_menu ul {
+    margin-top: 120px;
+    text-align: center; }
+    .top_menu ul a {
+      display: block;
+      padding: 20px 0;
+      text-transform: uppercase; }

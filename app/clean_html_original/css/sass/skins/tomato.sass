@@ -12,6 +12,9 @@ body
 	color: $main_color
 	+kerning(1)
 
+button 
+	background: #000
+
 a
 	color: $color
 
@@ -20,9 +23,33 @@ p
 
 .color_element
 	color: $color
+
 .color_bg
 	background-color: $color
+
 .color_border
 	border-color: $color
-.color_border1
-	border-color: $color
+
+.main_color_bg
+
+svg
+	
+	path 
+		fill: $main_color
+
+.top_menu 
+
+	a 
+
+		color: #fff
+		+kerning(5)
+
+		&:hover 
+
+			background: rgba(255,255,255,.05)
+			color: $color
+
+
+		
+
+

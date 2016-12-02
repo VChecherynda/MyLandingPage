@@ -2,6 +2,9 @@ body {
   color: #222;
   letter-spacing: 1px; }
 
+button {
+  background: #000; }
+
 a {
   color: #FF6347; }
 
@@ -17,5 +20,12 @@ p {
 .color_border {
   border-color: #FF6347; }
 
-.color_border1 {
-  border-color: #FF6347; }
+svg path {
+  fill: #222; }
+
+.top_menu a {
+  color: #fff;
+  letter-spacing: 5px; }
+  .top_menu a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #FF6347; }
