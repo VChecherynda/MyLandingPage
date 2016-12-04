@@ -44,7 +44,35 @@ body textarea:required:valid {
 
 section,
 .main_head {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
+
+section {
+  padding: 70px 0 80px; }
+  section h2 {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 15px; }
+
+.s_descr_wrap {
+  text-align: center; }
+  .s_descr_wrap .s_descr {
+    display: inline-block;
+    margin-bottom: 130px;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative; }
+    .s_descr_wrap .s_descr:after {
+      content: '';
+      width: 150px;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      margin-left: -75px;
+      margin-top: 60px;
+      position: absolute;
+      width: 150px; }
 
 .main_head {
   min-height: 620px;
@@ -63,10 +91,12 @@ svg {
   float: right;
   width: 60px;
   height: 60px;
-  position: relative;
+  position: fixed;
   z-index: 100;
   outline: 0;
-  border: none; }
+  border: none;
+  top: 20px;
+  right: 20px; }
 
 .sandwich {
   width: 34px;
@@ -141,5 +171,62 @@ svg {
     text-align: center; }
     .top_menu ul a {
       display: block;
-      padding: 20px 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      opacity: 0;
+      position: relative;
+      height: 60px; }
+      .top_menu ul a span {
+        display: block;
+        position: relative;
+        top: -40px;
+        left: 0;
+        height: 100%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .top_menu ul a span:hover {
+          background-color: rgba(255, 255, 255, 0.05); }
+
+.top_wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+  .top_wrapper .top_descr {
+    display: table-row; }
+    .top_wrapper .top_descr .top_centered {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+  .top_wrapper .top_text {
+    display: inline-block; }
+    .top_wrapper .top_text h1 {
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 10px 35px;
+      color: #fff;
+      border: 8px solid #fff;
+      text-transform: uppercase;
+      font-size: 3.2em;
+      font-weight: 700;
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: rgba(0, 0, 0, 0.3) 0 0 0 600px; }
+    .top_wrapper .top_text p {
+      margin: 0;
       text-transform: uppercase; }
+
+.h_opacity {
+  opacity: .5;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.main_footer {
+  padding: 50px 0;
+  font-size: 13px;
+  font-weight: 300; }

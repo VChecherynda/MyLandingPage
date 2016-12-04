@@ -8,8 +8,12 @@ button {
 a {
   color: #FF6347; }
 
-p {
+p,
+body .main_footer {
   color: #888; }
+
+.main_footer {
+  letter-spacing: 0px; }
 
 .color_element {
   color: #FF6347; }
@@ -21,11 +25,30 @@ p {
   border-color: #FF6347; }
 
 svg path {
-  fill: #222; }
+  fill: #888; }
+
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
+  .bg_dark .s_descr:after {
+    background-color: #fff; }
+  .bg_dark a {
+    color: #fff; }
 
 .top_menu a {
   color: #fff;
   letter-spacing: 5px; }
   .top_menu a:hover {
-    background: rgba(255, 255, 255, 0.05);
     color: #FF6347; }
+
+.top_text p {
+  color: #FAFAFA;
+  letter-spacing: 5px; }
+
+.s_descr {
+  letter-spacing: 5px; }
+  .s_descr:after {
+    background-color: #222; }
