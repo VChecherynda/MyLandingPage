@@ -1,8 +1,13 @@
 $(document).ready(function() {
 
+	$(".popup").magnificPopup({ type: "image"});
 
 	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
 	$(".top_text p, .section_header").animated("fadeInUp", "fadeOutDown");
+
+	$(".animation_1").animated("flipInY", "fadeOutY");
+	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
+	$(".animation_3").animated("fadeInRight", "fadeOutRight");
 
 
 	function heightDetect(){
