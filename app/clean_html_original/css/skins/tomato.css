@@ -63,3 +63,16 @@ section h3 {
 
 .s_about p:nth-child(even) {
   color: #FF6347; }
+
+.resume_container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600; }
+
+.resume_item .year {
+  color: #fff;
+  background-color: #FF6347; }
+
+.resume_item h3 {
+  letter-spacing: 1px; }

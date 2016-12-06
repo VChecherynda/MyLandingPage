@@ -49,7 +49,6 @@ body textarea:required:valid
 section,
 .main_head
 	position: relative
-	z-index: 1
 
 	h3 	
 		
@@ -277,8 +276,6 @@ $h: 3px
 			text-transform: uppercase
 			font-size: 3.2em
 			font-weight: 700
-			background-color: rgba(0,0,0,.3)
-			box-shadow: rgba(0,0,0,.3) 0 0 0 600px 
 
 		p 
 
@@ -326,3 +323,58 @@ $h: 3px
 		display: inline-block
 		padding: 0 3px
 		font-size: 20px
+
+.resume_container
+
+	.left
+		text-align: right
+		border-right: 1px solid #d2d2d2
+
+		h3 
+			text-align: right
+
+	.right
+		text-align: left
+
+		h3 
+			text-align: left
+
+	h3 
+		margin-top: 30px
+
+.resume_icon
+	font-size: 40px
+	margin-bottom: 35px
+
+.resume_item
+	margin-bottom: 35px
+
+	p 
+		margin-top: 10px
+
+	&:last-child
+		margin-bottom: 0
+
+		p 
+			margin-bottom: 0	
+
+	.year
+		display: inline-block
+		margin-bottom: 15px
+		padding: 0 10px	
+		font-weight: 600
+		font-style: italic
+
+.resume_description
+	font-style: italic
+
+	strong 
+		font-weight: 600
+		font-style: normal
+		text-transform: uppercase
+
+.left .resume_description strong 
+	margin-left: 10px	
+
+.right .resume_description strong 
+	margin-right: 10px	
