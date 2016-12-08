@@ -19,6 +19,10 @@
 		margin-bottom: 20px;
 	}
 	
+	.resume_container .left h3 {
+		text-align: left;
+		margin-top: 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -27,6 +31,20 @@
 	.top_wrapper .top_text h1 {
 		padding: 0 10px;
 		font-size: 2em;
+	}
+
+	.main_footer {
+		text-align: left;
+	}
+
+	.main_footer .social_wrap {
+		float: left;
+		width: 100%
+		margin-top: 20px;
+	}
+
+	.main_footer .social_wrap ul {
+		padding-left: 0;
 	}
 
 }
