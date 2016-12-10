@@ -3,7 +3,13 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync');
 
 gulp.task('sass', function(){
-	return gulp.src('app/clean_html_original/css/sass/**/*.sass')
+	return gulp.src([
+		'app/clean_html_original/css/sass/main.sass',
+		'app/clean_html_original/css/sass/skins/tomato.sass',
+		'app/clean_html_original/css/sass/skins/pink.sass',
+		'app/clean_html_original/css/sass/skins/blue.sass',
+		'app/clean_html_original/css/sass/skins/purple.sass'
+	])
 	.pipe(sass())
 	.pipe(gulp.dest('app/clean_html_original/css/'))
 	.pipe(browserSync.reload({
